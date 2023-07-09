@@ -1,3 +1,18 @@
+##########################################################
+#######[1] PAQUETE
+##########################################################
+import streamlit as st
+from PIL import Image
+#@st.cache 
+##########################################################
+#######[2]FILTROS PRINCIPALES
+##########################################################
+
+image = Image.open('covid.jpg')
+st.image(image, caption='',use_column_width=True)
+
+st.title("Test de riesgo Covid-19 :sunglasses:")
+
 html_temp = """
 <div style="background-color:#26c5de;opacity: 0.80;padding:0.2 px">
 <h2 style="color:white;text-align:left;">Datos personales: </h2>
