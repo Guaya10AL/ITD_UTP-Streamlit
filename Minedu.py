@@ -11,7 +11,7 @@ from PIL import Image
 image = Image.open('covid.jpg')
 st.image(image, caption='',use_column_width=True)
 
-st.title("Test de riesgo Covid-19 :sunglasses:")
+st.title("Test de riesgo Minedu.py :sunglasses:")
 
 html_temp = """
 <div style="background-color:#26c5de;opacity: 0.80;padding:0.2 px">
