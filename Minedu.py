@@ -8,10 +8,10 @@ from PIL import Image
 #######[2]FILTROS PRINCIPALES
 ##########################################################
 
-image = Image.open('covid.jpg')
+image = Image.open('Minedu.png')
 st.image(image, caption='',use_column_width=True)
 
-st.title("Test de riesgo Minedu.py :sunglasses:")
+st.title("Test de riesgo Minedu 2020 :sunglasses:")
 
 html_temp = """
 <div style="background-color:#26c5de;opacity: 0.80;padding:0.2 px">
