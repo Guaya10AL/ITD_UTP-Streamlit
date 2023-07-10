@@ -36,16 +36,15 @@ region= st.selectbox(label="",options=['Lima','Lambayeque','Callao'],index=0,)
 ##########################################################
 html_temp = """
 <div style="background-color:#26c5de;padding:0.2 px">
-<h2 style="color:white;text-align:left;">Evaluación del nivel de exposición al Covid19: </h2>
+<h2 style="color:white;text-align:left;">Evaluación del centro de estudios: </h2>
 </div>
 """
 st.markdown(html_temp,unsafe_allow_html=True)
 
-st.write('**[1] ¿Sales de casa?**')
-sales=st.selectbox(label="",options=['Nunca','Algunas veces','Frecuentemente'],index=0,)
-
-st.write('**[2] ¿Has estado últimamente en una zona de riesgo como: trasporte publico,supermercados,tiendas u bancos?**')
-publico=st.selectbox(label="",options=['Si','No'],index=0,)
+st.write('**[1] Ciclo:**')
+Ciclo= st.slider(label="",min_value=1,max_value=10,value=1,step=1)
+st.write('**[2] Correo Estudiantil:**')
+publico=st.combobox(label="",)
 
 st.write('**[3]¿Cual de estas medidas tomas al salir?**')
 medidas=st.multiselect(label="Puedes seleccionar más de una:",options=['Nunca salgo','Mascarilla','Guantes','Lentes','Mameluco','Ducha al regresar'])
