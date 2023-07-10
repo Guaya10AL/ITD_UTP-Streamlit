@@ -22,7 +22,7 @@ st.markdown(
 image = Image.open('Minedu.png')
 st.image(image, caption='',use_column_width=True)
 
-st.title("Test de Minedu 2020 :sunglasses:")
+st.title("Test de Minedu 2020 ")
 
 html_temp = """
 <style>
