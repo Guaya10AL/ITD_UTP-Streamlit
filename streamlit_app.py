@@ -35,7 +35,6 @@ html_temp = """
 
 st.markdown(html_temp, unsafe_allow_html=True)
 """
-st.markdown(html_temp,unsafe_allow_html=True)
 
 st.write('**¿Cuál es tu edad?**')
 edad= st.slider(label="",min_value=1,max_value=100,value=18,step=1)
