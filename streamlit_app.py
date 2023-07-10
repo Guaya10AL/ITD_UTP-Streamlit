@@ -29,12 +29,6 @@ genero= st.selectbox(label="",options=['Masculino','Femenino'],index=0,)
 st.write('**¿En qué region vives?**')
 region= st.selectbox(label="",options=['Lima','Lambayeque','Callao'],index=0,)
 
-st.write('**¿En qué distrito vives?**')
-distrito= st.selectbox(label="",
-		options=['CHICLAYO','SJL','CALLAO','SMP','CERCADO','VILLA EL SALVADOR','ATE','BREÑA',
-		         'SJM','VICTORIA','COMAS','SURCO','VMT','AGUSTINO','CHORRILLOS','JESUS MARIA',
-		         'MIRAFLORES','SANTA ANITA','RIMAC','LOS OLIVOS','LA MOLINA','CARABAYLLO','PUEBLO LIBRE',
-		         'SAN BORJA','SURQUILLO','SAN MIGUEL','INDEPENDENCIA','SAN ISIDRO','PUENTE PIEDRA'],index=0,)
 
 
 ##########################################################
