@@ -62,9 +62,15 @@ st.markdown(html_temp,unsafe_allow_html=True)
 st.write('**[1] Ciclo:**')
 Ciclo= st.slider(label="",min_value=1,max_value=10,value=1,step=1)
 st.write('**[2] Correo Estudiantil:**')
-correo = st.text_input("Ingrese su correo electrónico")
+correo = st.comboox(label="Correo Electrónico", value="")
 
-st.write('**[3]¿Cual de estas medidas tomas al salir?**')
+if correo:
+    if "@" in correo and "." in correo:
+        st.success("¡Correo electrónico válido!")
+    else:
+        st.error("Por favor, ingresa un correo electrónico válido.")
+
+st.write('**[3]**')
 medidas=st.multiselect(label="Puedes seleccionar más de una:",options=['Nunca salgo','Mascarilla','Guantes','Lentes','Mameluco','Ducha al regresar'])
 
 st.write('**[4]¿Has estado o crees haber estado en contacto directo con algún contagiado de COVID-19?**')
