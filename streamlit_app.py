@@ -8,7 +8,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 # Loading dataset 
-df = pd.read_csv('https://github.com/Guaya10AL/ITD_UTP-Streamlit/blob/main/MINEDU%202020.csv',
+df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data',
                 names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
 
 st.title('Exploratory Data Analysis of the Iris Dataset')
