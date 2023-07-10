@@ -62,7 +62,7 @@ st.markdown(html_temp,unsafe_allow_html=True)
 st.write('**[1] Ciclo:**')
 Ciclo= st.slider(label="",min_value=1,max_value=10,value=1,step=1)
 st.write('**[2] Correo Estudiantil:**')
-publico=st.TextField(label="",)
+correo = st.text_input("Ingrese su correo electrónico")
 
 st.write('**[3]¿Cual de estas medidas tomas al salir?**')
 medidas=st.multiselect(label="Puedes seleccionar más de una:",options=['Nunca salgo','Mascarilla','Guantes','Lentes','Mameluco','Ducha al regresar'])
