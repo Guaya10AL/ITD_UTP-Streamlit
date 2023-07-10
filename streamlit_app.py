@@ -12,7 +12,17 @@ image = Image.open('Minedu.png')
 st.image(image, caption='',use_column_width=True)
 
 st.title("Test de Minedu 2020 :sunglasses:")
+<style>
+    body {
+        background-color: #f2f2f2; /* color de fondo */
+        background-size: cover;
+    }
+</style>
+<div style="background-color:#26c5de;padding:0.2px">
+    <h2 style="color:white;text-align:left;"> </h2>
+</div>
 
+st.markdown(html_temp, unsafe_allow_html=True)
 html_temp = """
 <div style="background-color:#26c5de;opacity: 0.80;padding:0.2 px">
 <h2 style="color:white;text-align:left;">Datos personales: </h2>
