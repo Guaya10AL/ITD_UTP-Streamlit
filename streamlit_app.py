@@ -8,6 +8,15 @@ from PIL import Image
 #######[2]FILTROS PRINCIPALES
 ##########################################################
 
+
+html_temp = """
+<style>
+body {
+    background-color: #eaf2f8;
+}
+</style>
+"""
+st.markdown(html_temp, unsafe_allow_html=True)
 image = Image.open('Minedu.png')
 st.image(image, caption='',use_column_width=True)
 
