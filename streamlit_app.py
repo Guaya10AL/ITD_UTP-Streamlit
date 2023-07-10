@@ -11,7 +11,7 @@ from PIL import Image
 image = Image.open('Minedu.png')
 st.image(image, caption='',use_column_width=True)
 
-st.title("Test de Minedu 2020 :sunglasses:")
+st.title("Test de Minedu 2020")
 
 html_temp = """
 <div style="background-color:#26c5de;opacity: 0.80;padding:0.2 px">
@@ -44,10 +44,10 @@ st.markdown(html_temp,unsafe_allow_html=True)
 st.write('*[1] Ciclo:*')
 Ciclo= st.slider(label="",min_value=1,max_value=10,value=1,step=1)
 st.write('*[2] Correo Estudiantil:*')
-publico=st.selectbox(label="",options=['Si','No'],index=0,)
+correo = st.text_input("Ingrese su correo electrónico")
 
-st.write('*[3]¿Cual de estas medidas tomas al salir?*')
-medidas=st.multiselect(label="Puedes seleccionar más de una:",options=['Nunca salgo','Mascarilla','Guantes','Lentes','Mameluco','Ducha al regresar'])
+st.write('*[3]Modalidad:*')
+medidas=st.multiselect(label="Puedes seleccionar más de una:",options=['Presencial','Semipresencial','Virtual'])
 
 st.write('*[4]¿Has estado o crees haber estado en contacto directo con algún contagiado de COVID-19?*')
 contacto=st.selectbox(label=" ",options=['Si','No'],index=0,)
@@ -108,66 +108,6 @@ if region =='Callao':
 if region =='Lambayeque':
 	region= 0.2
     
-###################distrito
-
-if distrito == 'SJL':
-	distrito = 0.08
-if distrito =='CALLAO':
-	region=0.07
-if distrito =='SMP':
-	distrito=0.07
-if distrito == 'CERCADO':
-	distrito = 0.07
-if distrito =='VILLA EL SALVADOR':
-	region= 0.06
-if distrito =='ATE':
-	distrito= 0.06
-if distrito == 'SJM':
-	distrito = 0.05
-if distrito =='VICTORIA':
-	region= 0.05
-if distrito =='COMAS':
-	distrito= 0.04        
-if distrito == 'SURCO':
-	distrito = 0.04
-if distrito =='VMT':
-	region= 0.04
-if distrito =='AGUSTINO':
-	distrito= 0.04
-if distrito == 'CHORRILLOS':
-	distrito = 0.04
-if distrito =='JESUS MARIA':
-	region= 0.03
-if distrito =='MIRAFLORES':
-	distrito= 0.03
-if distrito == 'SANTA ANITA':
-	distrito = 0.03
-if distrito =='RIMAC':
-	region= 0.03
-if distrito =='LOS OLIVOS':
-	distrito= 0.02
-if distrito == 'LA MOLINA':
-	distrito = 0.02
-if distrito =='CARABAYLLO':
-	region= 0.02
-if distrito =='SAN BORJA':
-	distrito= 0.02
-if distrito =='SURQUILLO':
-	region= 0.02
-if distrito =='SAN MIGUEL':
-	distrito= 0.02
-if distrito =='INDEPENDENCIA':
-	region= 0.02
-if distrito =='SAN ISIDRO':
-	distrito= 0.02
-if distrito =='PUENTE PIEDRA':
-	region= 0.02
-if distrito =='BREÑA':
-	distrito= 0.01
-if distrito =='PUEBLO LIBRE':
-	region= 0.01
-if distrito =='CHICLAYO':
-	distrito= 0.08
 
 ###################sales
 if sales =='Nunca':
